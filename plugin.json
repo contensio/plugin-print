@@ -1,0 +1,1 @@
+{"name":"Print Button","slug":"print","version":"1.0.0","description":"Adds a print-friendly button to posts. Injects print CSS to hide nav and sidebar automatically.","author":"Contensio","author_url":"https://contensio.com","requires_contensio":"2.0.0","provider":"Contensio\\Plugins\\PrintButton\\PrintButtonServiceProvider"}
