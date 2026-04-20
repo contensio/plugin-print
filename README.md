@@ -1,6 +1,6 @@
 # Print Button
 
-Adds a print-friendly button to every post. Clicking it calls `window.print()`. The plugin also injects a `<style media="print">` block that hides navigation, sidebars, and UI chrome — so the printed page contains only the article content.
+Adds a print-friendly button to every post. Clicking it calls `window.print()`. The plugin also injects a `<style media="print">` block that hides navigation, sidebars, and UI chrome - so the printed page contains only the article content.
 
 **Features:**
 - Print button in the post meta row (alongside date, reading time, etc.)
@@ -37,7 +37,7 @@ No migrations or configuration required.
 The plugin registers two hooks:
 
 **`contensio/frontend/head` (priority 10)**
-Injects a `<style media="print">` block. The browser only applies these rules when the page is being printed — no effect on normal rendering.
+Injects a `<style media="print">` block. The browser only applies these rules when the page is being printed - no effect on normal rendering.
 
 **`contensio/frontend/post-meta` (priority 20)**
 Injects the Print button into the post meta row. Priority 20 places it after reading time (priority 5) and word count (priority 6), near the end of the meta row.

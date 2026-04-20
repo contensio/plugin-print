@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Print Button — Contensio plugin.
+ * Print Button - Contensio plugin.
  * https://contensio.com
  *
  * @copyright   Copyright (c) 2026 Iosif Gabriel Chimilevschi
@@ -17,13 +17,15 @@ use Illuminate\Support\ServiceProvider;
 
 class PrintButtonServiceProvider extends ServiceProvider
 {
+    protected string $ns = 'contensio-print';
+
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'print-button');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', $this->ns);
 
         // Print-specific CSS rules injected into <head> (only active when printing)
         Hook::add('contensio/frontend/head', function (): string {
-            return view('print-button::partials.print-css')->render();
+            return view($this->ns . '::partials.print-css')->render();
         });
 
         // Print button injected into the post meta row at priority 20

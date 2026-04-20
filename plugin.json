@@ -4,7 +4,7 @@
     "description": "Adds a print-friendly button to posts. Injects print CSS to hide nav and sidebar automatically.",
     "author": "Contensio",
     "author_url": "https://contensio.com",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "provider": "Contensio\\Plugins\\PrintButton\\PrintButtonServiceProvider",
     "autoload": {
         "psr-4": {
